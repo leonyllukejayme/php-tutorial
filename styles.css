@@ -1,0 +1,36 @@
+html,body{      
+    padding: 0;
+    margin: 0;
+}
+.main{
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.main .create-main{
+    grid-row: 1/2;
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 5px;
+}
+
+.main .read-main{
+    grid-row: 2/3;
+}
+
+.main .read-main tr th{
+    width: 200px;
+}
+
+.main .read-main tr td {
+    text-align: center;
+}
+
+.main .read-main tr td:nth-child(4){
+    display: grid;
+    grid-auto-flow: column;
+}
